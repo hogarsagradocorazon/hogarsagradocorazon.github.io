@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Formulario</title>
+            <link rel="stylesheet" href="./formulario.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+            <section class="main">
+
+                        <figure class="main__figure">
+                                    <img src="./img/illustration.svg" class="main__img">
+                        </figure>
+
+                        <div class="main__contact">
+
+                                    <h2 class="main__title">Formulario</h2>
+                                    <p class="main__paragraph">Complete los campos para agendar una cita</p>
+
+                                    <form class="main__form" action="https://formsubmit.co/xangie.urrutiax@gmail.com" method="POST">
+
+                                                
+                                                <label for="Nombre"></label>
+                                                <input type="text" placeholder="Nombre" class="main__input" name="name">
+
+                                                <label for="Nombre"></label>
+                                                <input type="email" placeholder="email" class="main__input" name="email">
+
+                                                <label for="subject"></label>
+                                                <input type="text" placeholder="Asunto" class="main__input" name="subject">
+
+                                                <label for="comments"></label>
+                                                <textarea name="comments" id="" cols="15" rows="5" placeholder="Mensaje" class="main__input"></textarea>
+
+                                                
+                                                <input type="submit" value="Enviar" class="main__input main__input--send">
+
+                                                <input type="hidden" name="_next" value="http://127.0.0.1:5500">
+                                                <input type="hidden" name="_captcha" value="false">
+                                                
+
+                                    </form>
+
+
+
+                        </div>
+
+            </section>
+
+
+
+</body>
+
+</html>
+
+
