@@ -190,6 +190,15 @@ body {
 
 }
 
+.autor{
+                        color: #fff;
+                        text-decoration: none;
+                        text-align: center;                      
+                        padding: 5px 10px;
+                        font-weight: inherit;
+
+}
+
 /* responsive design*/
 
 
