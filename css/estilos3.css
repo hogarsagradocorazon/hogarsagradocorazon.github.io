@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&family=Raleway:ital,wght@0,300;0,700;1,200;1,500&display=swap');
+
+
+:root{
+            --background: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
+            --fondo: linear-gradient(135deg, #ffffff7e 0%, #ffffff98 100%);
+            --color-primary:#667eea;
+            --color-secondary:#764ba2;
+            --boton-padding: 20px 40px;
+}
+
+
+body{
+            font-family: 'Raleway', sans-serif;
+}
+
+
+
+.container{
+            width: 90%;
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 80px 0;
+            max-width: 1200px;
+}
+
+.subtitle{
+            color: var(--color-primary);
+            font-size: 2.5rem;
+            margin-bottom: 35px;
+}
+
+
+
+.hero{
+            height: 100vh;
+            background-image: var(--background), url('../assets/IMG_6474-2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            position: relative;
+}
+
+.hero .container{
+            padding: 0%;
+}
+
+.nav{
+            display: flex;
+            justify-content: flex-end;
+            height: 70px;
+            align-items: center;
+            font-weight: 700;
+}
+
+.nav--footer{
+            font-weight: 300;
+            justify-content: flex-start;
+}
+
+.nav__items{
+            color:#fff;
+            text-decoration: none;
+            margin-right: 20px;
+            padding: 10px 15px;
+            font-weight: inherit;
+}
+
+.nav__items--cta{
+            border: 1px solid #fff;
+}
+
+.nav__items--footer{
+            padding: 10px;
+}
+
+.hero__container{
+            display: flex;
+            height: calc(100vh - 70px);
+            align-items: center;
+            color: #fff;
+}
+
+.hero__texts{
+            width: 80%;
+            margin-bottom: 50px;
+}
+
+.hero__title{
+            font-size: 3.2rem;
+}
+
+
+.hero__subtitle{
+            font-size: 2rem;
+            font-weight: 300;
+            margin: 15px 0;
+}
+
+
+.hero__cta{
+            display: inline-block;
+            background: #fff;
+            padding: var(--boton-padding);
+            color: var(--color-primary);
+            text-decoration: none;
+            border-radius: 40px;
+}
+
+
+.hero__wave{
+            position: absolute;
+            bottom: 0;
+            left: 0%;
+            width: 100%;
+            height: 100px;
+}
+
+/*comienza sección about*/
+
+
+.about {
+  
+  min-height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 80px;
+  justify-items: center;
+  align-items: center;
+}
+
+.about__texts{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+
+.about__img {
+  text-align: right;
+}
+
+.about__img--left {
+  text-align: left;
+}
+
+.about__picture {
+  max-width: 92%;
+
+}
+
+.about__historia {
+  max-width: 90%;
+
+}
+
+.about__paragraph {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-weight: 300;
+  text-align: justify;
+}
+
+/*proyectos*/
+
+
+
+/*footer*/
+
+.footer{
+            background: var(--color-primary);
+}
+
+.footer__grid{
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: 20px;
+            align-items: center;
+}
+
+.footer__title{
+            font-weight: 400;
+            color: #fff;
+            font-size: 2rem;
+            margin-bottom: 30px;
+            text-align: center;
+}
+
+.footer__icons{
+            display:flex;
+            justify-content:space-evenly;
+}
+
+.footer__container-icons{
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            color: #fff;
+            text-align: center;
+            border: 1px solid #fff;
+            border-radius: 50%;
+}
+
+.footer__icon{
+            color: inherit;
+            font-size: 30px;
+            text-decoration: none;
+            line-height: 60px;
+}
+
+.fab.footer__icon{
+            line-height: 60px;
+            
+}
+
+.fa.footer__icon{
+            line-height: 60px;
+
+}
+
+
+.autor {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 10px;
+  font-weight: inherit;
+
+}
+
+
+/* responsive design*/
+
+
+@media screen and (max-width:800px) {
+            :root {
+                        --boton-padding: 18px 40px;
+            }
+
+            .nav {
+                        justify-content: space-around;
+            }
+
+            .nav__items {
+                        font-weight: 400;
+                        border-bottom: 1px solid #fff;
+                        margin-right: 0;
+            }
+
+            .nav__items--cta {
+                        border: none;
+            }
+
+            .nav__items--footer {
+                        border: none;
+            }
+
+            .hero__texts {
+                        width: 100%;
+                        margin-bottom: 80px;
+            }
+
+            .hero__title {
+                        font-size: 2.5rem;
+            }
+
+            .hero__subtitle {
+                        font-size: 1.5rem;
+            }
+
+            /* about */
+
+
+            .about {
+                        grid-template-columns: 1fr;
+            }
+
+            .about__container {
+                        padding-top: 30px;
+            }
+
+
+
+
+        
+            .about__img{
+                        text-align: center; 
+            }
+
+
+
+
+
+    
+
+
+            .about__img--left{
+                        text-align: center; 
+            }
+
+            .about__texts:last-child{
+                        grid-row: 3/4;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /* My projects */
+
+            
+            /* testimony */
+
+          
+
+            /* footer */
+
+            .footer__grid {
+                        grid-template-columns: 1fr;
+            }
+
+            .footer__contact {
+                        grid-row: 1/2;
+            }
+}
+
+
+@media screen and (max-width: 500px) {
+            :root {
+                        --boton-padding: 18px 35px;
+            }
+
+            .subtitle {
+                        font-size: 2rem;
+                        margin-bottom: 20px;
+            }
+
+
+            .nav {
+                        flex-wrap: wrap;
+                        justify-content: space-evenly;
+                        margin-top: 10px;
+            }
+
+            .nav__items {
+                        padding: 0 10px;
+                        border: 0;
+            }
+
+            .hero__texts {
+                        text-align: center;
+                        margin-bottom: 100px;
+            }
+
+            .hero__title {
+                        font-size: 2rem;
+            }
+
+            /* about */
+
+       
+
+            .about {
+                        row-gap: 60px;
+            }
+
+            .about.container {
+                        padding-top: 10px;
+            }
+
+            
+            /* my projects */
+           
+
+            /* testimony */
+
+            
+            
+
+}
+
+
+
+
+
+
+
+
+

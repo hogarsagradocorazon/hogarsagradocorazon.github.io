@@ -8,8 +8,12 @@
 
 :root{
             --background: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
+
+
+            --background-video: linear-gradient(135deg, #3409977a 0%, #54238b42 100%);
+            
             --color-primary:#667eea;
-            --color-secondary:#764ba2;
+            --color-secondary:#ad9ae3d6;
             --boton-padding: 20px 40px;
 }
 
@@ -22,19 +26,22 @@ body{
             width: 90%;
             margin: 0 auto;
             overflow: hidden;
-            padding: 80px 0;
+            padding: 70px 0;
             max-width: 1200px;
 }
+
+
 
 .subtitle{
             color: var(--color-primary);
             font-size: 2.5rem;
-            margin-bottom: 35px;
+            margin-bottom: 40px;
+            
 }
 
 .hero{
             height: 100vh;
-            background-image: var(--background), url('../assets/affection-of-seniors.jpg');
+            background-image: var(--background), url('../assets/jardin\ 20.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
@@ -125,10 +132,10 @@ body{
 }
 
 .presentation__picture{
-            width: 150px;
-            height: 150px;
+            width: 190px;
+            height: 190px;
             border-radius: 50%;
-            margin-bottom: 10px;
+            margin-bottom: 35px;
             object-fit: cover;
             object-position: top;
 }
@@ -140,13 +147,40 @@ body{
 
 .presentation__cta{
             display: inline-block;
-            margin-top: 30px;
-            background: var(--color-primary);
+            margin-top: 60px;
+            background:#9e7dea;
             color: rgb(255, 255, 255);
             text-decoration: none;
             padding: var(--boton-padding);
             border-radius: 40px;
 }
+
+
+.container__video{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 75vh;
+            background-position: center;
+            background-image: var(--background-video), url('../assets/fondovideo2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            position: relative;
+}
+
+.video{
+            width: 100%;
+
+}
+
+.c-video{
+            width: 100%;
+            max-width: 800px;        
+            border-color: #667eea;
+}
+
 
 .about{
             min-height: 400px;
@@ -157,8 +191,11 @@ body{
             align-items: center;
 }
 
+
+
+
 .about__img{
-            text-align: center; 
+            text-align: right; 
 }
 
 .about__img--left{
@@ -166,7 +203,8 @@ body{
 }
 
 .about__picture{
-            max-width: 80%;
+            max-width: 92%;
+            border-radius: 10px;
 
 }
 
@@ -266,7 +304,6 @@ body{
             padding: 30px 25px;
             color: rgb(255, 255, 255);
             margin-bottom: 50px;
-            text-align: center;
 }
 
 .testimony__person{
@@ -276,14 +313,14 @@ body{
 }
 
 .testimony__img{
-            width: 100px;
-            min-width: 100px;
-            height: 100px;
+            width: 130px;
+            min-width: 130px;
+            height: 130px;
             object-fit: cover;
             object-position: top;
             border-radius: 50%;
-            border: 3px solid rgb(255, 255, 255);
-            margin-right: 30px;
+            border: 3px solid rgba(255, 255, 255, 0.481);
+            margin-right: 20px;
 }
 
 .testimony__name{
@@ -292,7 +329,7 @@ body{
 }
 
 .testimony__verification{
-            color: #b6e5ee;
+            color: #69618f;
             font-weight: 700;
             
 }
@@ -307,6 +344,164 @@ body{
 .footer{
             background: var(--color-primary);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer .contacto {
+
+
+
+                        height: 400px;
+
+                        background-position: center;
+                        padding: 50px 0;
+
+
+                        height: 100vh;
+                        background-image: var(--background),
+                        url('../assets/jardin\ 10.jpg');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-attachment: fixed;
+                        background-position: center;
+                        position: relative;
+
+
+
+}
+.main {
+            margin: auto;
+            width: 90%;
+            max-width: 1000px;
+            background-image: linear-gradient(to left, rgba(255, 255, 255, 0.472), rgba(255, 255, 255, 0.365));
+            overflow: hidden;
+            padding: .7em;
+            border-radius: 1em;
+
+            display: grid;
+            grid-auto-rows: max-content;
+            grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+            gap: .6em;
+
+            animation: mostrar 1.5s ease-in-out;
+}
+
+@keyframes mostrar {
+            0% {
+                        opacity: 0;
+            }
+
+            100% {
+                        opacity: 1;
+            }
+}
+
+.main__figure {
+            overflow: hidden;
+            border-radius: 1em;
+            background-color: #ffffff;
+            display: flex;
+}
+
+.main__img {
+            margin: auto;
+            width: 80%;
+            max-width: 60vw;
+}
+
+.main__contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1.5em;
+            padding: 0em .0em;
+            text-align: center;
+}
+
+.main__form {
+            display: grid;
+            justify-items: center;
+            gap: 1em;
+}
+
+
+.main__input {
+            width: 80%;
+            max-width: 500px;
+            outline: none;
+            border: none;
+            padding: 1em;
+            font: inherit;
+            border-radius: .6em;
+}
+
+.main__input--send {
+            background-color: #8e6ae2;
+            color: rgb(255, 255, 255);
+            font-weight: 600;
+            cursor: pointer;
+}
+
+.main__title {
+            font-size: 2.3rem;
+            color: #fff;
+}
+
+.main__paragraph {
+            margin: .3em 0;
+            color: #fff;
+            font-weight: 700;
+}
+
+
+.main__social {
+            display: grid;
+            grid-auto-flow: column;
+            justify-content: center;
+            grid-auto-columns: max-content;
+            gap: 1em;
+}
+
+.main__link {
+            border: 1px solid #fff;
+            border-radius: 10px;
+            padding: .6em 1.5em;
+}
+
+.main__link:hover {
+            background-color: #fff;
+}
+
+.main__icon {
+            width: 30px;
+            height: 30px;
+}
+
+
+
+
+
 
 .footer__grid{
             display: grid;
@@ -365,6 +560,12 @@ body{
 }
 
 
+
+element.style {
+            padding-bottom: 30px;
+}
+
+
 /* responsive design*/
 
 
@@ -417,6 +618,18 @@ body{
                         padding-top: 30px;
             }
 
+
+            .about__img{
+                        text-align: center; 
+            }
+
+
+
+
+
+    
+
+
             .about__img--left{
                         text-align: center; 
             }
@@ -424,6 +637,9 @@ body{
             .about__texts:last-child{
                         grid-row: 3/4;
             }
+
+
+            
 
             /* My projects */
 
@@ -455,6 +671,11 @@ body{
                         grid-row: 1/2;
             }
 }
+
+
+
+
+
 
 
 @media screen and (max-width: 500px) {
@@ -530,6 +751,10 @@ body{
             
             .testimony__person{
                         flex-direction: column;
+            }
+
+            .testimony__texts{
+                        text-align: center;
             }
 
             .testimony__img{
